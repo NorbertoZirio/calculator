@@ -55,6 +55,8 @@ function makeTheOperation(textToOperate){
             let result=Number(num1)/Number(num2)
             return result
 
+        }else if(textToOperate.includes("16022025")){
+            return "TE AMO"
         }else return "ERROR"
         
     }else return "ERROR"
