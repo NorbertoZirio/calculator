@@ -15,7 +15,7 @@ function updateScreen(inputText){
     }
 }
 
-const buttons=document.querySelectorAll(".button:not(#equal)")
+const buttons=document.querySelectorAll(".button")
 
 buttons.forEach(button => {
     button.addEventListener("click", function (e){
@@ -55,12 +55,9 @@ function makeTheOperation(textToOperate){
             let result=Number(num1)/Number(num2)
             return result
 
-        }else if (textToOperate=="16022025"){
-            return "TE AMO"
-        }
-        else return "ERROR1"
+        }else return "ERROR"
         
-    }else return "ERROR2"
+    }else return "ERROR"
 }
 
 
